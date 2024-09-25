@@ -1,0 +1,241 @@
+Assignment 
+
+1. List the Operators in Java?
+Answer:  Java offers a wide variety of operators, categorized for different tasks:
+Arithmetic Operators (+, -, *, /, %): Perform basic mathematical operations like addition, subtraction, multiplication, division, and modulus.
+Unary Operators (+, -, ++, --, !): Operate on a single operand to change its value, such as incrementing/decrementing or negating a boolean.
+Relational Operators (==, !=, >, <, >=, <=): Compare two values and return a boolean result, typically used for conditional expressions.
+Logical Operators (&&, ||, !): Used for logical comparisons, often in control flow statements like if or while.
+Bitwise Operators (&, |, ^, ~, <<, >>, >>>): Manipulate individual bits of integer values for low-level programming tasks.
+Assignment Operators (=, +=, -=, *=, /=, %=): Assign values to variables, with combined forms to update the variable in-place.
+Ternary Operator (? :): A compact form of if-else statements for simple conditional assignments.
+Instanceof Operator: Checks whether an object is an instance of a particular class.
+Type Cast Operators: Convert variables from one data type to another.
+String Concatenation (+): Used to join strings.
+These operators are fundamental to building any Java application.
+
+2. Explain about Increment and Decrement operators and give an examples
+Answer|: 
+Increment (++) and decrement (--) operators increase or decrease a variable's value by 
+ They come in two forms: prefix (++x, --x, changes before use) and postfix (x++, x--, changes after use).
+Example:int x = 5;
+System.out.println(++x); // 6 (prefix)
+System.out.println(x--); // 6 (postfix)
+
+3. What are the Conditional Operators in Java?
+answer:
+In Java, the conditional (ternary) operator is a shorthand for if-else statements. It has the form:
+condition ? expression1 : expression2;
+If the condition is true, expression1 is evaluated and returned; otherwise, expression2 is evaluated.
+Example:int a = 10, b = 20;
+int result = (a > b) ? a : b; // If a > b, result = a, otherwise result = b
+System.out.println(result);    // Output: 20
+
+4. What are the types of operators based on the number of operands?
+Answer:
+Operators in Java can be classified based on the number of operands they work on:
+
+1. Unary Operators (1 Operand):
+Operate on a single operand. Examples include:
+
+++ (increment)
+-- (decrement)
+! (logical NOT)
++ and - (unary plus/minus)
+Example:int x = 5;
+x++; // Increment x by 1
+2. Binary Operators (2 Operands):
+Operate on two operands. These include:
+
+Arithmetic operators: +, -, *, /, %
+Relational operators: ==, !=, >, <
+Logical operators: &&, ||
+Bitwise operators: &, |, ^
+Example:int a = 10, b = 20;
+int result = a + b;
+3. Ternary Operator (3 Operands):
+Also known as the conditional operator (? :), it operates on three operands.
+
+Example:int max = (a > b) ? a : b;
+
+5. What are the conditional Statements and use of conditional statements in Java?
+Answer:
+Conditional statements in Java are used to control the flow of execution based on certain conditions.
+ These statements allow a program to make decisions and execute specific code blocks depending on whether the condition evaluates to `true` or `false`.
+
+### Types of Conditional Statements in Java:
+
+1. `if` Statement:
+   Executes a block of code if the specified condition is true.
+   java
+   if (condition) {
+       // code to execute if condition is true
+   }
+   
+
+2. `if-else` Statement:
+   Provides an alternative block of code to execute if the condition is false.
+   java
+   if (condition) {
+       // code if condition is true
+   } else {
+       // code if condition is false
+   }
+   
+
+3. `else if` Ladder:
+   Allows testing multiple conditions sequentially. If the first condition is false, it checks the next, and so on.
+   java
+   if (condition1) {
+       // code for condition1
+   } else if (condition2) {
+       // code for condition2
+   } else {
+       // code if none of the conditions are true
+   }
+   
+
+4. `switch` Statement:
+   Evaluates an expression and executes the corresponding `case` block.
+   java
+   switch (expression) {
+       case value1:
+           // code for value1
+           break;
+       case value2:
+           // code for value2
+           break;
+       default:
+           // code if no case matches
+   }
+   
+
+Use of Conditional Statements:
+Conditional statements are essential for decision-making in programs, allowing different outcomes based on dynamic inputs or conditions, such as controlling loops, responding to user input, or managing error handling.
+6. What is the syntax of if else statement?
+ANswer:
+The `if-else` statement in Java is used to execute a block of code based on a condition. If the condition evaluates to `true`, the `if` block is executed; if it evaluates to `false`, the `else` block runs. This allows for decision-making in programs.
+
+ Syntax of `if-else` Statement:
+
+if (condition) {
+    // code to execute if the condition is true
+} else {
+    // code to execute if the condition is false
+}
+
+
+
+- The `condition` is a boolean expression that evaluates to either `true` or `false`.
+- The code block inside the `if` statement runs only if the condition is `true`.
+- The code block inside the `else` statement runs only if the condition is `false`.
+
+Example:
+
+
+int number = 10;
+
+if (number > 0) {
+    System.out.println("The number is positive.");
+} else {
+    System.out.println("The number is not positive.");
+}
+
+
+
+7. What are the 3 types of iterative statements in java?
+Answer:
+In Java, the three types of iterative (looping) statements are:
+
+ 1. `for` Loop:
+Executes a block of code a specific number of times, typically when the number of iterations is known in advance.
+
+for (int i = 0; i < 5; i++) {
+    // code to execute
+}
+2. `while` Loop:
+Executes a block of code as long as the condition remains true.
+
+while (condition) {
+    // code to execute
+}
+
+ 3. `do-while` Loop:
+Similar to `while`, but guarantees at least one execution of the block before checking the condition.
+
+do {
+    // code to execute
+} while (condition);
+
+
+These loops enable repetitive execution of code based on conditions.
+8. What do you mean by an Array?
+Answer:
+An array in Java is a collection of elements of the same data type, stored in contiguous memory locations. It allows you to group multiple values under a single variable name, with each element accessed by its index, starting from 0.
+
+ Key Points:
+- Arrays can store primitive types (e.g., `int`, `float`) or objects.
+- They have a fixed size defined at the time of creation and cannot grow or shrink dynamically.
+
+ Example:
+
+int[] numbers = {1, 2, 3, 4, 5};  // Array of integers
+System.out.println(numbers[0]);    // Accessing the first element (1)
+
+
+Arrays simplify data management when dealing with collections of related items.
+9. How to create an Array?
+Answer:
+Creating an array in Java involves declaring the array, allocating memory, and optionally initializing its elements. Here’s how you can do it:
+
+### 1. **Declare an Array:**
+You can declare an array by specifying the data type followed by square brackets.
+
+
+int[] numbers; // Declaration of an integer array
+
+
+ 2. **Allocate Memory:**
+Use the `new` keyword to allocate memory for the array. Specify the size of the array.
+
+
+numbers = new int[5]; // Allocates memory for an array of 5 integers
+
+
+ 3. **Initialization (Optional):**
+You can initialize the array at the time of declaration using curly braces.
+
+int[] numbers = {1, 2, 3, 4, 5}; // Declaration and initialization
+
+
+Complete Example:
+
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = new int[5]; // Declaration and allocation
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = i + 1; // Initializing elements
+        }
+    }
+}
+
+
+In this example, an integer array of size 5 is created and initialized with values from 1 to 5.
+10. State the difference between StringBuffer and StringBuilder in Java.
+Answer:
+In Java, StringBuffer and StringBuilder are both mutable classes used for creating and manipulating strings, but they have key differences:
+
+1. Synchronization:
+   - StringBuffer is synchronized, making it thread-safe. This means it can be safely used in a multi-threaded environment.
+   - StringBuilde is not synchronized, making it faster but not thread-safe.
+
+2. Performance:
+   - StringBuilder generally offers better performance in single-threaded scenarios due to the lack of synchronization overhead.
+
+3. Usage:
+   - Use StringBuffer when thread safety is required.
+   - Use StringBuilder for better performance when thread safety is not a concern.
+
+Example
+StringBuffer sb = new StringBuffer("Hello");
+StringBuilder sb2 = new StringBuilder("World");
